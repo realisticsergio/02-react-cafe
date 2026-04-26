@@ -45,8 +45,8 @@ const positiveRate = totalVotes > 0 ? Math.round((votes.good / totalVotes) * 100
       {totalVotes > 0 ? (
         <VoteStats 
           votes={votes} 
-          total={totalVotes} 
-          positive={positiveRate} 
+          totalVotes={totalVotes} 
+          positiveRate={positiveRate} 
         />
       ) : (
         <Notification />
